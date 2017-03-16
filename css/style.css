@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    background: url("../img/bg.jpg") repeat-x;
+    background-color: #0c739f;
+}
+.wrapper{
+    margin:0 auto;
+    width: 1000px;
+    min-height: calc(100vh - 30px);
+    background-color: #fff;
+    box-shadow: 2px 2px 15px rgba(0,0,0, 0.6);
+}
+header{
+    position: relative;
+}
+.logo{
+    margin-left: 25px;
+}
+.contacts{
+    position: absolute;
+    top: 2px;
+    right: 25px;
+    text-align: left;
+    color: #128aa7;
+    font-size: 12px;
+    font-family: Tahoma, sans-serif;
+}
+.contacts p{
+    line-height: 18px;
+}
+.contries{
+    position: absolute;
+    bottom: 5px;
+    right:25px;
+}
+.contries li{
+    list-style: none;
+    float: left;
+    margin-left: 15px;
+}
+.contries li a {
+    display: block;
+    text-align: center;
+    color: #128aa7;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 45px;
+}
+.contries .india a{
+    background-image: url("../img/india.png");
+}
+.contries .israel a{
+    background-image: url("../img/israel.png");
+}
+.contries .nepal a{
+    background-image: url("../img/nepal.png");
+}
+.contries .phutan a{
+    background-image: url("../img/phutan.png");
+}
+.contries .sri-lanka a{
+    background-image: url("../img/sri-lanka.png");
+}
+.contries .tibet a{
+    background-image: url("../img/tibet.png");
+}
+.slider{
+    margin-top: 7px;
+    position: relative;
+}
+.slider:before{
+    content: '';
+    background: url("../img/photo.png");
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    height: 237px;
+    width: 1000px;
+}
+nav{
+    margin-top:-5px;
+    width:100%;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-image:  url("../img/bg_menu.png");
+    background-repeat: repeat-x;
+}
+nav ul:after{
+    content: '';
+    display: block;
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+    width: 140px;
+
+}
+ul.menu > li > a {
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    line-height:12px;
+    font-family:Tahoma, sans-serif;
+    text-decoration: none;
+}
+ul.menu > li:hover {
+    background-color: black;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 140px;
+    top: 32px;
+    left: 0;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+.content{
+    width:1000px;
+    overflow: hidden;
+}
+.rightbar, .leftsidebar{
+    width: 210px;
+    float: left;
+    margin-bottom: -20000px;
+    padding-bottom: 20000px;
+    background: #edeef0;
+}
+.centerbar{
+    width: 580px;
+    margin-bottom: -20000px;
+    padding-bottom: 20000px;
+    float: left;
+    background: #fff;
+}
+footer{
+    height: 40px;
+    text-align: center;
+    line-height:26px;
+}
